@@ -1,4 +1,4 @@
-# 🚀 Resumix ATS — Commercial AI Resume Screening & Applicant Tracking Platform
+#  Resumix ATS — AI Resume Screening & Applicant Tracking Platform
 
 [![Live Demo](https://img.shields.io/badge/Vercel_Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-resume-screening-ats.vercel.app/)
 [![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
@@ -15,8 +15,7 @@ An enterprise-grade, AI-powered Applicant Tracking System (ATS) and Resume Scree
 
 ## 📸 Executive Application Showcase
 
-| Dashboard & Hiring Funnel | Enterprise Batch Upload |
-| :---: | :---: |
+
 | ![Dashboard Screenshot](screenshots/dashboard.png) | ![Upload Screenshot](screenshots/upload.png) |
 
 | Comprehensive Resume Analysis | Candidate Ranking Matrix |
