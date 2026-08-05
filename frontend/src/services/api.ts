@@ -4,7 +4,7 @@ import {
   MOCK_JOB_DESCRIPTIONS
 } from './mockData';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://ai-resume-screening-api-h8t8.onrender.com';
 
 export interface RankedCandidateResult {
   rank: number;
