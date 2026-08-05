@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   THEME SYSTEM CSS VARIABLES
+   ========================================================================== */
+
+:root,
+[data-theme="dark-modern"] {
+  --background: #090d16;
+  --surface: #0f172a;
+  --card: #1e293b;
+  --border: #334155;
+  --primary: #0c8ee9;
+  --secondary: #6366f1;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #f43f5e;
+}
+
+[data-theme="cyber-neon"] {
+  --background: #030712;
+  --surface: #0b0f19;
+  --card: #111827;
+  --border: #1f2937;
+  --primary: #38bdf8;
+  --secondary: #818cf8;
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #fb7185;
+}
+
+[data-theme="emerald-tech"] {
+  --background: #022c22;
+  --surface: #064e3b;
+  --card: #047857;
+  --border: #065f46;
+  --primary: #10b981;
+  --secondary: #14b8a6;
+  --text: #ecfdf5;
+  --muted: #a7f3d0;
+  --success: #34d399;
+  --warning: #f59e0b;
+  --danger: #f43f5e;
+}
+
+[data-theme="purple-tech"] {
+  --background: #0f0716;
+  --surface: #190b28;
+  --card: #24113a;
+  --border: #3b1c5c;
+  --primary: #a855f7;
+  --secondary: #c084fc;
+  --text: #faf5ff;
+  --muted: #d8b4fe;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #fb7185;
+}
+
+[data-theme="light-mode"] {
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --card: #f1f5f9;
+  --border: #cbd5e1;
+  --primary: #0284c7;
+  --secondary: #4f46e5;
+  --text: #0f172a;
+  --muted: #64748b;
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #e11d48;
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    @apply antialiased transition-colors duration-300;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Glass Panel & Glass Card Components using CSS Variables */
+.glass-panel {
+  background-color: var(--surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.glass-card {
+  background-color: var(--card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.glass-card:hover {
+  border-color: var(--primary);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 25px -5px var(--primary);
+}
+
+/* Dynamic Theme Utility Classes */
+.bg-theme-bg { background-color: var(--background); }
+.bg-theme-surface { background-color: var(--surface); }
+.bg-theme-card { background-color: var(--card); }
+.bg-theme-primary { background-color: var(--primary); }
+.bg-theme-secondary { background-color: var(--secondary); }
+.border-theme { border-color: var(--border); }
+.border-theme-primary { border-color: var(--primary); }
+.text-theme-primary { color: var(--primary); }
+.text-theme-secondary { color: var(--secondary); }
+.text-theme-muted { color: var(--muted); }
+.text-theme-main { color: var(--text); }
+.btn-primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 0 20px -3px var(--primary);
+}
+.btn-primary:hover {
+  filter: brightness(1.15);
+}

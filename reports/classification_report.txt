@@ -1,0 +1,47 @@
+==================================================
+          CLASSIFICATION METRICS REPORT           
+==================================================
+
+Dataset Size       : 2481
+Training Samples   : 1984
+Testing Samples    : 497
+Vocabulary Size    : 5000
+
+Accuracy           : 0.6579
+Precision          : 0.6794
+Recall             : 0.6579
+F1 Score           : 0.6503
+
+--------------------------------------------------
+Detailed Classification Report:
+--------------------------------------------------
+                        precision    recall  f1-score   support
+
+            ACCOUNTANT       0.74      0.83      0.78        24
+              ADVOCATE       0.57      0.50      0.53        24
+           AGRICULTURE       0.86      0.46      0.60        13
+               APPAREL       1.00      0.47      0.64        19
+                  ARTS       0.50      0.33      0.40        21
+            AUTOMOBILE       1.00      0.14      0.25         7
+              AVIATION       0.87      0.87      0.87        23
+               BANKING       0.58      0.61      0.60        23
+                   BPO       0.00      0.00      0.00         4
+  BUSINESS-DEVELOPMENT       0.36      0.58      0.44        24
+                  CHEF       0.89      0.71      0.79        24
+          CONSTRUCTION       0.82      0.64      0.72        22
+            CONSULTANT       0.50      0.30      0.38        23
+              DESIGNER       0.82      0.67      0.74        21
+         DIGITAL-MEDIA       0.68      0.79      0.73        19
+           ENGINEERING       0.64      0.75      0.69        24
+               FINANCE       0.62      0.75      0.68        24
+               FITNESS       0.89      0.71      0.79        24
+            HEALTHCARE       0.46      0.57      0.51        23
+                    HR       0.74      0.91      0.82        22
+INFORMATION-TECHNOLOGY       0.64      0.88      0.74        24
+      PUBLIC-RELATIONS       0.76      0.86      0.81        22
+                 SALES       0.52      0.57      0.54        23
+               TEACHER       0.62      0.90      0.73        20
+
+              accuracy                           0.66       497
+             macro avg       0.67      0.62      0.62       497
+          weighted avg       0.68      0.66      0.65       497
